@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block title %}Model Selection{% endblock %}
+
+{% block content %}
+<h1 style="color:rgb(250, 250, 250);"><b><i>Select a model from the drop-down list below:</i></b></h1>
+<br>
+<form action="#" method="post">
+  <select id="model" class ="input" style="color:rgb(178, 20, 241)" name = "model">
+    <option value="Logistic Regression">Logistic Regression</option>
+    <option value="Decision Tree Classifier">Decision Tree Classifier</option>
+    <option value="CNN">Convolutional Neural Network</option>
+    <option value="SVM">Support Vector Machine</option>
+  </select>
+  <br><br>
+<p><input type="submit" value="Submit" /></p>
+</form>
+{% endblock %}
